@@ -1,34 +1,41 @@
 # Merge Sorted Collections (TypeScript)
 
 
-## 🧠 Logic
+## Logic
 
 - `collection_1`: max → min
 - `collection_2` and `collection_3`: min → max
 
-## 📦 Setup
+## Setup
 
 ```bash
 npm install
 ```
 
-## 🔧 Build
+## Start
+
+```bash
+npm run start
+```
+
+## Build
 
 ```bash
 npm run build
 ```
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 npm test
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
   merge.ts         # logic
+  main.ts          # main
 test/
   merge.spec.ts    # unit tests
 ```
