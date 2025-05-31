@@ -1,12 +1,10 @@
 # Merge Sorted Collections (TypeScript)
 
-This project merges three sorted integer arrays into a single sorted array in ascending order **without using any built-in sort functions**.
 
 ## 🧠 Logic
 
-- `collection_1`: sorted descending (max → min) → reversed internally
-- `collection_2` and `collection_3`: already sorted ascending (min → max)
-- Merged using a multi-pointer approach without calling `.sort()`
+- `collection_1`: max → min
+- `collection_2` and `collection_3`: min → max
 
 ## 📦 Setup
 
@@ -30,7 +28,7 @@ npm test
 
 ```
 src/
-  merge.ts         # merge logic implementation
+  merge.ts         # logic
 test/
   merge.spec.ts    # unit tests
 ```
@@ -38,14 +36,10 @@ test/
 ## ✅ Example
 
 ```ts
-const c1 = [9, 7, 5];       // descending
-const c2 = [1, 3, 6];       // ascending
-const c3 = [2, 4, 8];       // ascending
+const c1 = [9, 7, 5];       // Max to min
+const c2 = [1, 3, 6];       // Min to max
+const c3 = [2, 4, 8];       // Min to max
 
 merge(c1, c2, c3); 
 // Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
-
-## License
-
-MIT
